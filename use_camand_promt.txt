@@ -1,0 +1,9 @@
+1. to create clone :- git clone "use http link of git"
+2. check the folder status :- ls
+3. change the directry :- cd file path/(file name if file is avelable in same directory)
+
+
+## commond to load work on git 
+git add .
+git commit -m "comment"
+git push origin main

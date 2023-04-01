@@ -1,0 +1,20 @@
+# if virtualevn is not install 
+- pip install virtualenv
+
+# create virtualevn
+- virtualenv [env name]
+
+# activating the enverment
+- [env name]\script\activate
+
+# wanna walk out to the env
+- deactivate
+
+# creating requirments.txt file
+- pip freeze > requirments.txt
+
+# creating virtualenv with all pre_install package 
+- virtualenv --system-site-packages [env name]
+
+# delete the env
+- del [env name]
