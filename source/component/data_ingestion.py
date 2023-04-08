@@ -1,5 +1,6 @@
 from source.logger import logging
 from source.exception import CustomException
+from source.component.data_transformation import DataTransformation
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
 import os
@@ -32,9 +33,21 @@ class DataIngestion:
 
             # saving the raw data
             df.to_csv(self.ingestion_config.raw_data_path,index=False,header=True)
+            
+            # Data set column rename
+            logging.info(f"columns defore rename{df.columns}")
+            df.rename(columns={'PAY_0':'PAY_SEPT','PAY_2':'PAY_AUG','PAY_3':'PAY_JUL','PAY_4':'PAY_JUN','PAY_5':'PAY_MAY','PAY_6':'PAY_APR','default.payment.next.month':'DEFAULT'},inplace=True)
+            df.rename(columns={'BILL_AMT1':'BILL_AMT_SEPT','BILL_AMT2':'BILL_AMT_AUG','BILL_AMT3':'BILL_AMT_JUL','BILL_AMT4':'BILL_AMT_JUN','BILL_AMT5':'BILL_AMT_MAY','BILL_AMT6':'BILL_AMT_APR'}, inplace = True)
+            df.rename(columns={'PAY_AMT1':'PAY_AMT_SEPT','PAY_AMT2':'PAY_AMT_AUG','PAY_AMT3':'PAY_AMT_JUL','PAY_AMT4':'PAY_AMT_JUN','PAY_AMT5':'PAY_AMT_MAY','PAY_AMT6':'PAY_AMT_APR'},inplace=True)
+            
+            logging.info(f"columns name after renaming {df.columns}")
+
+            logging.info(f"balancing in Education and marriage")
+            df.replace({'EDUCTION':{1:1,2:1,3:2,4:3,5:3,6:3,0:3},'MARRIAGE':{1:1,2:2,0:3,3:3}},inplace=True)
 
             # splitting the data into train and test
             logging.info('Train test split initiated')
+
             train_set, test_set = train_test_split(df,test_size=0.25, random_state=42)
 
             train_set.to_csv(self.ingestion_config.train_data_path,index=False,header=True)
@@ -53,3 +66,6 @@ class DataIngestion:
 if __name__ == "__main__":
     obj = DataIngestion()
     train_data, test_data = obj.initiate_data_ingestion()
+
+    data_transformation = DataTransformation()
+    train_arr,test_arr,_ = data_transformation.initiate_data_transformation(train_data,test_data)
