@@ -5,7 +5,7 @@ import pandas as pd
 import dill
 from source.exception import CustomException
 from sklearn.model_selection import GridSearchCV
-from sklearn.metrics import accuracy_score, recall_score, roc_auc_score
+from sklearn.metrics import roc_auc_score
 
 def save_object(file_path,obj):
     try:
@@ -24,10 +24,10 @@ def save_object(file_path,obj):
 def evaluate_models(x_train,y_train,x_test,y_test,models, params):
     try:
         report = {}
-        for i in range(len(list)):
-            model = list(model.values())[i]
+        for i in range(len(list(models))):
+            model = list(models.values())[i]
 
-            para = params[list(model.keys())[i]]
+            para = params[list(models.keys())[i]]
 
             gs = GridSearchCV(model, para, cv=3)
             gs.fit(x_train,y_train)

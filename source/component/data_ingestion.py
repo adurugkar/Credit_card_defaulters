@@ -6,7 +6,7 @@ from dataclasses import dataclass
 import os
 import sys
 import pandas as pd
-
+from source.component.model_trainer import ModelTrainer
 
 
 # diffing variable so use data class
@@ -69,3 +69,7 @@ if __name__ == "__main__":
 
     data_transformation = DataTransformation()
     train_arr,test_arr,_ = data_transformation.initiate_data_transformation(train_data,test_data)
+
+    modeltrainer = ModelTrainer()
+    auc_roc_socres = modeltrainer.initiate_mode_trainer(train_arr,test_arr)
+    print(auc_roc_socres)
