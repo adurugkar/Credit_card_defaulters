@@ -26,10 +26,7 @@ class ModelTrainer:
     def initiate_mode_trainer(self,train_array, test_array):
         try:
             logging.info('split training and test input data')
-            x_train,y_train,x_test,y_test =(
-                train_array[:,:-1]
-                ,train_array[:,-1], test_array[:,:-1],test_array[:,-1]
-            )
+            x_train,y_train,x_test,y_test =(train_array[:,:-1],train_array[:,-1], test_array[:,:-1],test_array[:,-1])
 
             models = {
                 'Random Forest': RandomForestClassifier(),
@@ -92,35 +89,33 @@ class ModelTrainer:
                     'n_neighbors':range(1, 21, 2),
                     # 'weights' :['uniform', 'distance'],
                     # 'metric':['euclidean', 'manhattan', 'minkowski']
-                },
-                # 'SVMClassifier':{
-                #     'kernel' = ['poly', 'rbf', 'sigmoid'],
-                #     'C' = [50, 10, 1.0, 0.1, 0.01],
-                #     'gamma' = ['scale']
-                # },
                 }
-                
+                }
+            logging.info('model evaluation get start')
             model_report:dict = evaluate_models(x_train,y_train,x_test,y_test,models=models,params=params)
+            logging.info(f'model report : {model_report}')
 
             # to get best model score from dict
             best_model_score = max(sorted(model_report.values()))
 
             # to get best model name from dict
-            best_model_name = list(model_report.values())[list(model_report.values()).index(best_model_score)]
-            print(best_model_name)
-#__________________________________________________________________________________________________________________
+            best_model_name = list(model_report.keys())[list(model_report.values()).index(best_model_score)]
             best_model = models[best_model_name]
+            logging.info(f'best model : {best_model_name}')
 
             if best_model_score<0.6:
                 raise CustomException('No best Model found')
-            logging.info('Best found model on both training and test dataset is {best_model}')
+            logging.info(f'Best found model on both training and test dataset is {best_model}')
 
             save_object(
-                self.model_trainer_config.trained_model_file_path, best_model,
+                self.model_trainer_config.trained_model_file_path,
                 obj=best_model)
+            logging.info(f'best model save in path : {self.model_trainer_config.trained_model_file_path}')
             
+            logging.info('predicting the y_test value ')
             predicted = best_model.predict(x_test)
-            roc_auc= roc_auc_score(x_test, predicted)
+            roc_auc= roc_auc_score(y_test, predicted)
+            logging.info(f'we get roc_auc_sorce : {roc_auc}')
             return roc_auc
                                     
         except Exception as e:
