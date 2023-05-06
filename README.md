@@ -74,7 +74,10 @@ credit-card-defaulter-prediction/
 - `README.md` is the file you are currently reading.
 - `requirements.txt` contains a list of required packages and their versions.
 
-## Contact AVINASH
+## Author
+- Avinash Durugkar
+
+## Contact to author
 
 <div id="badges">
   <a href="https://www.linkedin.com/in/adurugkar/">
