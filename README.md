@@ -1,8 +1,18 @@
 
 
 # Credit Card Defaulter Prediction
+## About project
+Sure, here are some bullet points about the Credit Card Defaulter Prediction project:
 
-This project aims to predict whether a credit card holder will default on their payment next month or not, based on their past payment history and demographic information. The dataset used for this project is taken from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients).
+- Using Data Science and Machine Learning, we can build a model that predicts whether a credit card holder will default on their payment next month or not, based on their past payment history and demographic information.
+- The dataset used for this project is taken from the UCI Machine Learning Repository and stored in a CSV format.
+- The project uses Sklearn for pre-processing and model building, as well as Pandas, Numpy, and Matplotlib for CSV reading, data processing, data cleaning, visualization, and analysis.
+- The pre-processing steps involve scaling the data, dealing with missing values, and converting categorical variables to numerical using one-hot encoding.
+- The project uses several classification models such as Logistic Regression, Decision Tree, Random Forest, and XGBoost to predict the credit card defaulter probability.
+- The models are evaluated using accuracy, precision, recall, F1-score, and ROC curve metrics.
+- The best model is selected based on the evaluation metrics and hyperparameters tuning.
+- The project is deployed as a Flask app on Heroku, where the user can input their details to get a prediction of their credit card defaulter probability.
+
 
 ## Getting Started
 
