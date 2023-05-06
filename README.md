@@ -77,7 +77,7 @@ credit-card-defaulter-prediction/
 │
 ├── notebook/
 │   ├──data/
-│   │	   └──UCI_Credit_Card.csv
+│   │	  └──UCI_Credit_Card.csv
 │   │──EDA.ipynb
 │   └──model.ipynb
 │
