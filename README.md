@@ -103,7 +103,6 @@ Credit_card_defaulters/
 - `exception` contains the Custom exception information for this project.
 - `README.md` is the file you are currently reading.
 - `requirements.txt` contains a list of required packages and their versions.
-- 
 
 ## Author
 - Avinash Durugkar
