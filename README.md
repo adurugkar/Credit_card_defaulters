@@ -76,8 +76,5 @@ credit-card-defaulter-prediction/
 
 ## Authors
 
-- Your Name (@yourusername)
-
-## License
-
-This project is licensed under the MIT License - see the `LICENSE` file for details.
+- Avianash Durugkar
+- adurugkar42@gmail.com
