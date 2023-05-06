@@ -2,7 +2,6 @@
 
 # Credit Card Defaulter Prediction
 ## About project
-Sure, here are some bullet points about the Credit Card Defaulter Prediction project:
 
 - Using Data Science and Machine Learning, we can build a model that predicts whether a credit card holder will default on their payment next month or not, based on their past payment history and demographic information.
 - The dataset used for this project is taken from the UCI Machine Learning Repository and stored in a CSV format.
