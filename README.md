@@ -21,14 +21,13 @@ Make sure you have the following installed on your machine:
 1. Clone this repository using the following command:
 
 ```
-git clone [](https://github.com/adurugkar/Credit_card_defaulters)
+git clone https://github.com/adurugkar/Credit_card_defaulters
 ```
 
 2. Navigate to the project directory:
 
-```[
-](https://github.com/adurugkar/Credit_card_defaulters)
-cd credit-card-defaulter-prediction
+```
+cd Credit_card_defaulters
 ```
 
 3. Install the required packages:
@@ -78,4 +77,6 @@ credit-card-defaulter-prediction/
 ## Authors
 
 - Avianash Durugkar
-- adurugkar42@gmail.com
+## Contact 
+
+<gmail: adurugkar42@gmail.com>
