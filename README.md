@@ -83,7 +83,7 @@ credit-card-defaulter-prediction/
 │
 │
 ├── source/
-│     │──component
+│     │──component/
 │     │	     │──data_ingestion.py
 │     │      │──data_transformation.py
 │     │      └──model_trainer.py
