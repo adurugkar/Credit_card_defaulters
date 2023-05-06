@@ -100,9 +100,10 @@ Credit_card_defaulters/
 
 - `data` directory contains the dataset used for this project.
 - `notebooks` directory contains the Jupyter Notebook file with the code and instructions.
-- `LICENSE` contains the license information for this project.
+- `exception` contains the Custom exception information for this project.
 - `README.md` is the file you are currently reading.
 - `requirements.txt` contains a list of required packages and their versions.
+- 
 
 ## Author
 - Avinash Durugkar
