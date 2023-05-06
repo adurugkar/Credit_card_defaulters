@@ -73,7 +73,8 @@ pip install -r requirements.txt
 The project has the following structure:
 
 ```
-credit-card-defaulter-prediction/
+
+Credit_card_defaulters/
 │
 ├── notebook/
 │   ├──data/
