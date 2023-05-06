@@ -46,13 +46,13 @@ pip install -r requirements.txt
 ```
 
 ## EDA
-In the Credit Card Defaulter Prediction project, we apply Exploratory Data Analysis (EDA) to extract insights from the dataset and understand which features contribute more in predicting whether a credit card holder will default on their payment next month or not.
+- In the Credit Card Defaulter Prediction project, we apply Exploratory Data Analysis (EDA) to extract insights from the dataset and understand which features contribute more in predicting whether a credit card holder will default on their payment next month or not.
 
-In this step, we use Pandas for data analysis and Matplotlib & Seaborn for data visualization. By exploring the dataset, we can gain insights into patterns and relationships within the data.
+- In this step, we use Pandas for data analysis and Matplotlib & Seaborn for data visualization. By exploring the dataset, we can gain insights into patterns and relationships within the data.
 
-We investigate the data for missing values, outliers, and data distributions. We also perform univariate analysis, bivariate analysis, and multivariate analysis to understand the relationships between different features and the target variable.
+- We investigate the data for missing values, outliers, and data distributions. We also perform univariate analysis, bivariate analysis, and multivariate analysis to understand the relationships between different features and the target variable.
 
-By understanding the data, we can identify any data quality issues and determine which features are most important for building our predictive model. We can also identify any potential biases in the dataset that may impact the accuracy of our model.
+- By understanding the data, we can identify any data quality issues and determine which features are most important for building our predictive model. We can also identify any potential biases in the dataset that may impact the accuracy of our model.
 
 ### Model Building 
 
