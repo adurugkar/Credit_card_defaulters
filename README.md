@@ -54,17 +54,13 @@ We investigate the data for missing values, outliers, and data distributions. We
 
 By understanding the data, we can identify any data quality issues and determine which features are most important for building our predictive model. We can also identify any potential biases in the dataset that may impact the accuracy of our model.
 
-### Usage
+### Model Building 
 
-1. Open Jupyter Notebook:
-
-```
-jupyter notebook
-```
-
-2. Navigate to the `notebooks` directory and open the `credit_card_defaulter_prediction.ipynb` file.
-
-3. Follow the instructions mentioned in the notebook to run the code and make predictions.
+- This project aims to predict whether a credit card user is likely to default on their payment using a binary classification model.
+- We utilized several models, including Logistic Regression, Decision Tree, Random Forest, XGBoost, and K-Nearest Neighbors, to predict the credit card default.
+- The dataset we used contained various features, such as demographics, payment history, and other financial variables.
+- We preprocessed the data by handling missing values, encoding categorical features, and scaling numerical features.
+- We evaluated the models using appropriate metrics such as Accuracy, Precision, Recall, F1-score, and ROC AUC, and selected the best-performing model.
 
 ## Project Structure
 
