@@ -63,11 +63,11 @@ By understanding the data, we can identify any data quality issues and determine
 - We evaluated the models using appropriate metrics such as Accuracy, Precision, Recall, F1-score, and ROC AUC, and selected the best-performing model.
 
 ### Model Selection
-Sure, here are 3 bullet points for the credit card defaulter project:
 
 - Hyperparameter tuning was performed using Randomized Gridsearch CV for the top 2 models for both Regression and Classification. This helped us to optimize the model's performance by selecting the best combination of hyperparameters.
 - For Classification, Stratified K-fold Cross-Validation metrics were used based on the best Mean CV Accuracy Model for Model Deployment. This approach helped us to ensure that the model's performance is robust and can generalize well on unseen data.
 - For Regression, R2 score metrics were used to select the best model. The R2 score is one of the performance evaluation measures for regression-based machine learning models. It helps to quantify how well the model fits the data and how well it can predict new data.
+
 ## Project Structure
 
 The project has the following structure:
