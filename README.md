@@ -80,5 +80,5 @@ credit-card-defaulter-prediction/
 ## Contact 
 
 <div id="Gmail" align="center">
-  <img src="adurugkar42@gmail.com" width="100"/>
+  <img src=https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white&style=for-the-badge width="100"/>
 </div>
