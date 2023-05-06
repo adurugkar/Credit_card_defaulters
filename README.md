@@ -79,4 +79,6 @@ credit-card-defaulter-prediction/
 - Avianash Durugkar
 ## Contact 
 
-<gmail: adurugkar42@gmail.com>
+<div id="Gmail" align="center">
+  <img src="adurugkar42@gmail.com" width="100"/>
+</div>
