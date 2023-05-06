@@ -75,17 +75,26 @@ The project has the following structure:
 ```
 credit-card-defaulter-prediction/
 │
-├── data/
-│   ├── credit_card_default.csv
-│   └── README.md
+├── notebook/
+│   ├──data/
+│   │	 |──UCI_Credit_Card.csv
+│   │──EDA.ipynb
+│   └──model.ipynb
 │
-├── notebooks/
-│   ├── credit_card_defaulter_prediction.ipynb
-│   └── README.md
 │
-├── LICENSE
-├── README.md
-└── requirements.txt
+├── source/
+│     │──component
+│     │	     │──data_ingestion.py
+│     │      │──data_transformation.py
+│     │      └──model_trainer.py
+│     │──pipeline
+│     │──exception.py
+│     │──logger.py
+│     └──utils.py
+│
+├── setup.py
+├── requirements.txt
+└── READE.md
 ```
 
 - `data` directory contains the dataset used for this project.
