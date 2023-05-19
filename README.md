@@ -67,10 +67,9 @@ pip install -r requirements.txt
 
 ### Model Selection
 
-- Hyperparameter tuning was performed using Gridsearch CV . This helped us to optimize the model's performance by selecting the best combination of hyperparameters.
-- For Classification, Stratified K-fold Cross-Validation metrics were used based on the best Mean CV Accuracy Model for Model Deployment. This approach helped us to ensure that the model's performance is robust and can generalize well on unseen data.
-- For Regression, R2 score metrics were used to select the best model. The R2 score is one of the performance evaluation measures for regression-based machine learning models. It helps to quantify how well the model fits the data and how well it can predict new data.
-
+- GridSearchCV was utilized to perform hyperparameter tuning, enabling us to optimize the performance of the model by identifying the most suitable combination of hyperparameters.
+- In terms of classification, Stratified K-fold Cross-Validation metrics were employed, leveraging the best Mean CV Accuracy Model for deploying the model. This approach ensured that the model's performance is robust and capable of generalizing well on unseen data, enhancing its reliability and effectiveness.
+-In the context of classification, the evaluation of the models involved assessing accuracy, recall, and AUC-ROC score metrics to determine the best-performing model. The AUC-ROC score is a valuable performance measure for classification-based machine learning models. It provides a quantitative assessment of both the model's goodness of fit to the training data and its ability to accurately predict outcomes for new, unseen data. By considering these metrics, we gain insights into the effectiveness and reliability of the classification models under consideration.
 ## Project Structure
 
 The project has the following structure:
