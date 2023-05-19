@@ -3,12 +3,15 @@
 
 # create virtualevn
 - virtualenv [env name]
+- conda create -n [env name] python=3.7
 
 # activating the enverment
 - [env name]\script\activate
+- conda activate [env name]
 
 # wanna walk out to the env
 - deactivate
+- conda deactivate 
 
 # creating requirments.txt file
 - pip freeze > requirments.txt
@@ -18,3 +21,4 @@
 
 # delete the env
 - del [env name]
+- conda remvoe -n [env name] --all

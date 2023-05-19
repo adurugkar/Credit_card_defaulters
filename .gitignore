@@ -36,6 +36,9 @@ MANIFEST
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
+folder_structure.txt
+use_camand_promt.txt
+venv creation.txt
 
 # Unit test / coverage reports
 htmlcov/
