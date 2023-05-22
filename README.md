@@ -107,19 +107,19 @@ Credit_card_defaulters/
 - `requirements.txt` contains a list of required packages and their versions. -->
 
 - `notebook`: This directory contains Jupyter notebooks related to the project.
-- `data`: This subdirectory holds the UCI_Credit_Card.csv dataset.
-- `EDA.ipynb`: The notebook for exploratory data analysis.
-- `model.ipynb`: The notebook for model development and evaluation.
-- `source`: This directory contains the source code for the project.
+  - `data`: This subdirectory holds the UCI_Credit_Card.csv dataset.
+  - `EDA.ipynb`: The notebook for exploratory data analysis.
+  - `model.ipynb`: The notebook for model development and evaluation.
 
--`component`: This subdirectory contains individual components of the MLOps pipeline.
-- `data_ingestion.py`: Code for data ingestion and loading the dataset.
-- `data_transformation.py`: Code for data preprocessing and transformation.
-- `model_trainer.py`: Code for training the machine learning model.
-- `pipeline`: This subdirectory can hold files related to the pipeline, such as configuration files.
-- `exception.py`: Exception handling code.
-- `logger.py`: Logging functionality implementation.
-- `utils.py`: Utility functions used in the project.
+- `source`: This directory contains the source code for the project.
+  - `component`: This subdirectory contains individual components of the MLOps pipeline.
+    - `data_ingestion.py`: Code for data ingestion and loading the dataset.
+    - `data_transformation.py`: Code for data preprocessing and transformation.
+    - `model_trainer.py`: Code for training the machine learning model.
+  - `pipeline`: This subdirectory can hold files related to the pipeline, such as configuration files.
+  - `exception.py`: Exception handling code.
+  - `logger.py`: Logging functionality implementation.
+  - `utils.py`: Utility functions used in the project.
 - `setup.py`: Setup script for the project.
 
 - `requirements.txt`: File specifying the project's dependencies.
